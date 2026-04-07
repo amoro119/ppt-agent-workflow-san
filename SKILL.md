@@ -207,6 +207,18 @@ Before delivery, check:
 
 If any capability limitations affected the result, say so plainly.
 
+### 11. Generate SVG slide representation
+
+When the environment supports it or the user requests a direct visual artifact, generate scalable vector graphics (SVG) to represent the slide layout.
+
+- **Purpose:** Provide a zero-dependency, universally viewable visual preview of the slide's layout, typography, and information hierarchy before formal export into a proprietary format (.pptx, .key).
+- **Requirements:**
+  - **Standardized Canvas:** Use standard presentation aspect ratios (e.g., 16:9 using `viewBox="0 0 1280 720"`).
+  - **Semantic Grouping:** Organize SVG code logically using `<g>` tags for headers, body content, sidebars, and footers so the code remains readable.
+  - **Text Handling:** Ensure text does not overflow. Use `<foreignObject>` for HTML/CSS text rendering if the environment supports it, or apply strict character-count line breaks for native `<text>` elements.
+  - **Asset Placeholders:** Represent complex visual assets (charts, photographs, diagrams) with clearly labeled wireframe shapes or bounding boxes (e.g., a `<rect>` with "Placeholder: Market Growth Chart").
+- **Trigger:** Execute this step primarily to turn an approved `planning-draft` into a visual mockup, or when the agent lacks a native PPTX rendering engine but still needs to deliver a visual result.
+
 ## Coordination Rules
 
 ### Research rule
@@ -230,3 +242,4 @@ The skill should never assume a specific research, rendering, preview, or export
 - `references/method.md` — distilled method and the reasoning behind staged PPT work
 - `references/agent-integration.md` — abstract coordination rules for agents with different capabilities
 - `references/prompts.md` — reusable prompts for research, outlining, planning, review, and optional format-specific generation
+- `references/svg-generator.md` — guidelines, structural templates, and reusable prompts for generating zero-dependency SVG slide mockups. Includes instructions on 16:9 viewBox constraints, safe text-wrapping strategies, semantic tag grouping, and visual placeholder techniques for charts and images.
