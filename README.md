@@ -43,3 +43,16 @@
 用于把结构化 HTML slide 转换为原生可编辑的 PowerPoint（.pptx）文件。
 
 详细使用说明请分别查看各子目录内的 `README.md`。
+
+##  Thanks
+
+
+<p>
+  <a href="https://linux.do">
+    <img src="https://img.shields.io/badge/LinuxDo-community-1f6feb" alt="LinuxDo">
+  </a>
+</p>
+
+## License
+
+Apache License 2.0.
