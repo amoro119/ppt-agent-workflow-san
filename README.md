@@ -1,37 +1,26 @@
-# ppt-agent-workflow-san
+# PPT Workflow Monorepo
 
-调研汽水音乐，经过简单的与agent几次对话，生成的ppt效果图。暂未实现svg生成的逻辑。
+这个仓库现在包含两个相关项目：
 
-## 效果图
+- `ppt-workflow/`：PPT 调研与页面效果图资产
+- `html-slide-to-pptx/`：将结构化 HTML slide 转换为可编辑 PPTX 的工具
 
-### 01 Cover
+## 目录结构
 
-![01-cover](./01-cover.png)
+```text
+.
+├── ppt-workflow/
+└── html-slide-to-pptx/
+```
 
-### 02 Core Conclusion
+## 子项目说明
 
-![02-core-conclusion](./02-core-conclusion.png)
+### ppt-workflow
 
-### 03 Positioning
+用于沉淀 PPT 调研结果、页面效果图和相关参考资料。
 
-![03-positioning](./03-positioning.png)
+### html-slide-to-pptx
 
-### 04 Users Scenarios
+用于把结构化 HTML slide 转换为原生可编辑的 PowerPoint（.pptx）文件。
 
-![04-users-scenarios](./04-users-scenarios.png)
-
-### 05 Growth Flywheel
-
-![05-growth-flywheel](./05-growth-flywheel.png)
-
-### 06 Competition
-
-![06-competition](./06-competition.png)
-
-### 07 Risks
-
-![07-risks](./07-risks.png)
-
-### 08 Conclusion
-
-![08-conclusion](./08-conclusion.png)
+详细使用说明请分别查看各子目录内的 `README.md`。
