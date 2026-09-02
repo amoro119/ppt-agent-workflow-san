@@ -1,0 +1,4 @@
+interface:
+  display_name: "HTML to bento/slides"
+  short_description: "Convert HTML slide decks into editable bento files"
+  default_prompt: "Use $html-to-bento-slides to convert this HTML presentation into an editable bento/slides file."
